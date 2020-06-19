@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8780635C249B055D0005306C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8780635B249B055D0005306C /* SignUpViewController.swift */; };
+		8780635E249B058C0005306C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8780635D249B058C0005306C /* LoginViewController.swift */; };
+		87806360249B05BA0005306C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8780635F249B05BA0005306C /* HomeViewController.swift */; };
+		87806365249B1C580005306C /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87806364249B1C580005306C /* Utilities.swift */; };
+		87806368249BB3A50005306C /* PasswordUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87806367249BB3A50005306C /* PasswordUtilities.swift */; };
+		8780636A249C5C650005306C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87806369249C5C650005306C /* GoogleService-Info.plist */; };
 		87BB6A422497086500B20CF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BB6A412497086500B20CF4 /* AppDelegate.swift */; };
 		87BB6A442497086500B20CF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BB6A432497086500B20CF4 /* SceneDelegate.swift */; };
 		87BB6A462497086500B20CF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BB6A452497086500B20CF4 /* ViewController.swift */; };
@@ -16,6 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8780635B249B055D0005306C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		8780635D249B058C0005306C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8780635F249B05BA0005306C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		87806364249B1C580005306C /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		87806367249BB3A50005306C /* PasswordUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordUtilities.swift; sourceTree = "<group>"; };
+		87806369249C5C650005306C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		87BB6A3E2497086500B20CF4 /* Best Buds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Best Buds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87BB6A412497086500B20CF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87BB6A432497086500B20CF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +49,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		87806361249B05D60005306C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				87BB6A452497086500B20CF4 /* ViewController.swift */,
+				8780635D249B058C0005306C /* LoginViewController.swift */,
+				8780635B249B055D0005306C /* SignUpViewController.swift */,
+				8780635F249B05BA0005306C /* HomeViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		87806366249B1C600005306C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				87806364249B1C580005306C /* Utilities.swift */,
+				87806367249BB3A50005306C /* PasswordUtilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		87BB6A352497086500B20CF4 = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +88,14 @@
 		87BB6A402497086500B20CF4 /* Best Buds */ = {
 			isa = PBXGroup;
 			children = (
+				87806366249B1C600005306C /* Utilities */,
+				87806361249B05D60005306C /* View Controllers */,
 				87BB6A5924971ABB00B20CF4 /* Assets.xcassets */,
 				87BB6A412497086500B20CF4 /* AppDelegate.swift */,
 				87BB6A432497086500B20CF4 /* SceneDelegate.swift */,
-				87BB6A452497086500B20CF4 /* ViewController.swift */,
 				87BB6A472497086500B20CF4 /* Main.storyboard */,
 				87BB6A4C2497086900B20CF4 /* LaunchScreen.storyboard */,
+				87806369249C5C650005306C /* GoogleService-Info.plist */,
 				87BB6A4F2497086900B20CF4 /* Info.plist */,
 			);
 			path = "Best Buds";
@@ -126,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87BB6A4E2497086900B20CF4 /* LaunchScreen.storyboard in Resources */,
+				8780636A249C5C650005306C /* GoogleService-Info.plist in Resources */,
 				87BB6A5A24971ABC00B20CF4 /* Assets.xcassets in Resources */,
 				87BB6A492497086500B20CF4 /* Main.storyboard in Resources */,
 			);
@@ -139,8 +174,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				87BB6A462497086500B20CF4 /* ViewController.swift in Sources */,
+				87806368249BB3A50005306C /* PasswordUtilities.swift in Sources */,
 				87BB6A422497086500B20CF4 /* AppDelegate.swift in Sources */,
+				87806365249B1C580005306C /* Utilities.swift in Sources */,
+				8780635C249B055D0005306C /* SignUpViewController.swift in Sources */,
+				8780635E249B058C0005306C /* LoginViewController.swift in Sources */,
 				87BB6A442497086500B20CF4 /* SceneDelegate.swift in Sources */,
+				87806360249B05BA0005306C /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
