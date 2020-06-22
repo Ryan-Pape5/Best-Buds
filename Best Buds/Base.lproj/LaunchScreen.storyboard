@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="zsA-Wm-nUi">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LoadscreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="zsA-Wm-nUi">
                                 <rect key="frame" x="-32" y="-103" width="479" height="1063"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -35,6 +35,6 @@
     </scenes>
     <resources>
         <image name="AppLogo" width="1331" height="1264.5"/>
-        <image name="Image" width="600" height="1281.5"/>
+        <image name="LoadscreenBackground" width="600" height="1281.5"/>
     </resources>
 </document>

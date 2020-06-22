@@ -8,11 +8,11 @@
 
 import Foundation
 
-class PasswordUtilities {
+class ValidationUtilities {
 	
-	 static func isPasswordValid(_ password : String) -> Bool {
+	 static func isPasswordValid(_ password:String) -> Bool {
 		   
-		   let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])[A-Za-z\\d$@$#!%*?&]{8,}")
+		   let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$")
 		   return passwordTest.evaluate(with: password)
 	   }
 	

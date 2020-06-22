@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,7 +11,7 @@
 		8780635E249B058C0005306C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8780635D249B058C0005306C /* LoginViewController.swift */; };
 		87806360249B05BA0005306C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8780635F249B05BA0005306C /* HomeViewController.swift */; };
 		87806365249B1C580005306C /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87806364249B1C580005306C /* Utilities.swift */; };
-		87806368249BB3A50005306C /* PasswordUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87806367249BB3A50005306C /* PasswordUtilities.swift */; };
+		87806368249BB3A50005306C /* ValidationUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87806367249BB3A50005306C /* ValidationUtilities.swift */; };
 		8780636A249C5C650005306C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87806369249C5C650005306C /* GoogleService-Info.plist */; };
 		87BB6A422497086500B20CF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BB6A412497086500B20CF4 /* AppDelegate.swift */; };
 		87BB6A442497086500B20CF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BB6A432497086500B20CF4 /* SceneDelegate.swift */; };
@@ -19,14 +19,17 @@
 		87BB6A492497086500B20CF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87BB6A472497086500B20CF4 /* Main.storyboard */; };
 		87BB6A4E2497086900B20CF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87BB6A4C2497086900B20CF4 /* LaunchScreen.storyboard */; };
 		87BB6A5A24971ABC00B20CF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87BB6A5924971ABB00B20CF4 /* Assets.xcassets */; };
+		A2C3C88E7EE6ADC388DE2215 /* Pods_Best_Buds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF4EBDDD18FD397A569B4933 /* Pods_Best_Buds.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14C781E2886624F883A7659D /* Pods-Best Buds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Best Buds.release.xcconfig"; path = "Target Support Files/Pods-Best Buds/Pods-Best Buds.release.xcconfig"; sourceTree = "<group>"; };
+		184B4B385B1CA74B68D91C80 /* Pods-Best Buds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Best Buds.debug.xcconfig"; path = "Target Support Files/Pods-Best Buds/Pods-Best Buds.debug.xcconfig"; sourceTree = "<group>"; };
 		8780635B249B055D0005306C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		8780635D249B058C0005306C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8780635F249B05BA0005306C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		87806364249B1C580005306C /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		87806367249BB3A50005306C /* PasswordUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordUtilities.swift; sourceTree = "<group>"; };
+		87806367249BB3A50005306C /* ValidationUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationUtilities.swift; sourceTree = "<group>"; };
 		87806369249C5C650005306C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		87BB6A3E2497086500B20CF4 /* Best Buds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Best Buds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87BB6A412497086500B20CF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		87BB6A4D2497086900B20CF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87BB6A4F2497086900B20CF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87BB6A5924971ABB00B20CF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../../Downloads/AppIcons (1)/Assets.xcassets"; sourceTree = "<group>"; };
+		BF4EBDDD18FD397A569B4933 /* Pods_Best_Buds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Best_Buds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,12 +47,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2C3C88E7EE6ADC388DE2215 /* Pods_Best_Buds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3DA60C9CD8F96BE1924F9527 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF4EBDDD18FD397A569B4933 /* Pods_Best_Buds.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		87806361249B05D60005306C /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -64,7 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				87806364249B1C580005306C /* Utilities.swift */,
-				87806367249BB3A50005306C /* PasswordUtilities.swift */,
+				87806367249BB3A50005306C /* ValidationUtilities.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -74,6 +87,8 @@
 			children = (
 				87BB6A402497086500B20CF4 /* Best Buds */,
 				87BB6A3F2497086500B20CF4 /* Products */,
+				B2969CDBE7A3DE1B0AB6E5C9 /* Pods */,
+				3DA60C9CD8F96BE1924F9527 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +116,15 @@
 			path = "Best Buds";
 			sourceTree = "<group>";
 		};
+		B2969CDBE7A3DE1B0AB6E5C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				184B4B385B1CA74B68D91C80 /* Pods-Best Buds.debug.xcconfig */,
+				14C781E2886624F883A7659D /* Pods-Best Buds.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -108,9 +132,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87BB6A522497086900B20CF4 /* Build configuration list for PBXNativeTarget "Best Buds" */;
 			buildPhases = (
+				3BCC634A8B3217AED442E9C4 /* [CP] Check Pods Manifest.lock */,
 				87BB6A3A2497086500B20CF4 /* Sources */,
 				87BB6A3B2497086500B20CF4 /* Frameworks */,
 				87BB6A3C2497086500B20CF4 /* Resources */,
+				FF29D83580101AA7176AE53C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -168,13 +194,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3BCC634A8B3217AED442E9C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Best Buds-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF29D83580101AA7176AE53C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Best Buds/Pods-Best Buds-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Best Buds/Pods-Best Buds-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Best Buds/Pods-Best Buds-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		87BB6A3A2497086500B20CF4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				87BB6A462497086500B20CF4 /* ViewController.swift in Sources */,
-				87806368249BB3A50005306C /* PasswordUtilities.swift in Sources */,
+				87806368249BB3A50005306C /* ValidationUtilities.swift in Sources */,
 				87BB6A422497086500B20CF4 /* AppDelegate.swift in Sources */,
 				87806365249B1C580005306C /* Utilities.swift in Sources */,
 				8780635C249B055D0005306C /* SignUpViewController.swift in Sources */,
@@ -322,6 +390,7 @@
 		};
 		87BB6A532497086900B20CF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 184B4B385B1CA74B68D91C80 /* Pods-Best Buds.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -340,6 +409,7 @@
 		};
 		87BB6A542497086900B20CF4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14C781E2886624F883A7659D /* Pods-Best Buds.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

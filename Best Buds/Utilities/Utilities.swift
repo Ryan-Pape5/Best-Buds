@@ -35,5 +35,10 @@ class Utilities {
         button.layer.cornerRadius = 20.0
         button.tintColor = UIColor.white
     }
+	
+	static func styleError(_ label:UILabel) {
+		label.lineBreakMode = .byWordWrapping
+		label.numberOfLines = 0
+	}
     
 }

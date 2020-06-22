@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
 	
@@ -33,17 +34,42 @@ class LoginViewController: UIViewController {
 
 	}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+	func validateUserInfo() -> String? {
+		if emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""{
+			return "Please be sure to fill in all fields."
+		}
+		return nil
+	}
+	
+	func displayErrorMessage(_ message:String){
+		//display the error message
+		errorMessage.text = message
+		errorMessage.alpha = 1
+	}
+	
+	func homeScreenTransition() {
+		let homeViewController = storyboard?.instantiateViewController(identifier: "HomeVC")
+		view.window?.rootViewController = homeViewController
+		view.window?.makeKeyAndVisible()
+	}
 	
 	@IBAction func submitButtonAction(_ sender: Any) {
+		if validateUserInfo() != nil {
+			Utilities.styleError(errorMessage)
+			errorMessage.alpha = 1
+			displayErrorMessage(validateUserInfo()!)
+		}
+		else {
+			let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+			let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+			Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+				if error != nil {
+					self.errorMessage.text = "Please check email and password and try again."
+				}
+				else {
+					self.homeScreenTransition()
+				}
+			}
+		}
 	}
 }
